@@ -1,0 +1,26 @@
+{% extends 'omoikaneapp/base.html' %}
+{% block content %}
+
+<div class="header">
+    <h1>新規登録</h1>
+</div>
+
+<form action="" method="post" style="padding: 20px;">
+    {% csrf_token %}
+    <label for="">ユーザー名：</label>
+    {{form.username}}
+    <label for="">パスワード：</label>
+    {{form.password1}}
+    <label for="">パスワード（確認用）：</label>
+    {{form.password2}}
+    <br>
+    <input type="submit" value="新規登録" class="button" style="margin-top: 10px">
+</form>
+
+<hr />
+
+<div class="accountWrapper">
+    <p>既に作成済みのアカウントが存在する場合：</p>
+    <a href="{% url 'login' %}">ログイン</a>
+</div>
+{% endblock content %}

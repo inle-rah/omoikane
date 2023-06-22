@@ -1,0 +1,139 @@
+body {
+    background-color:lightcyan;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    padding-top: 55px;
+}
+
+.todoAppWrapper {
+    max-width: 530px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 2px 2px 10px 10px #777777;
+    border-radius: 10px;
+}
+
+a {
+    color: #595959;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* ユーザ名のタスク */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background: rgb(8,147,255);
+    background: radial-gradient(circle, rgba(8,147,255,0.9886363636363636) 0%, rgba(10,119,224,1) 26%, rgba(19,22,115,1) 63%);
+    border-radius: 10px 10px 0 0;
+    color: whitesmoke;
+}
+
+/* タスク一覧 */
+.taskWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #777777;
+}
+
+.taskTitle {
+    display: flex;
+    align-items: center;
+}
+
+.taskCompletedIcon {
+    height: 20px;
+    width: 20px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.taskInCompletedIcon {
+    height: 20px;
+    width: 20px;
+    background-color: #595959;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.loginAndLogout {
+    padding: 20px;
+}
+
+.loginAndLogout a {
+    color: lightcoral;
+}
+
+.editButton {
+    color: chartreuse;
+}
+
+.deleteButton {
+    color: red;
+}
+
+/* タスクの検索と追加 */
+.searchWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+/* 検索窓 */
+.searchInput {
+    height: 24px;
+    outline: none;
+    border: 1px solid lightseagreen;
+    border-radius: 5px;
+    padding: 2px 4px;
+    width: 160px !important;
+}
+
+/* 検索ボタン */
+.button {
+    border: 1px solid lightseagreen;
+    padding: 4px 10px;
+    background-color: aliceblue;
+    color: lightseagreen;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.4s;
+}
+
+/* 検索ボタン、ホバー */
+.searchButton:hover {
+    background-color: lightseagreen;
+    color: white;
+}
+
+.addButton {
+    font-size: 32px;
+    color: lightseagreen;
+}
+
+/* タスク追加：配置 */
+label {
+    display: block;
+}
+
+/* タスク追加：入力欄 */
+input[type = "text"],
+textarea {
+    width: 100%;
+}
+
+.accountWrapper {
+    padding: 10px 20px 20px 20px;
+}
+
+.accountWrapper p {
+    margin: 0;
+    padding: 0;
+}
